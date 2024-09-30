@@ -1,0 +1,129 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+    background: #222;
+    color: #fff;
+    font-family:"system-ui";
+}
+.cruds-container{
+    width: 80%;
+    margin: auto;
+}
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+input{
+    width: 100%;
+    background: #111;
+    padding: 10px;
+    color: #fff;
+    margin:4px 0;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: .5s;
+    height: 60px;
+}
+input:focus{
+    background: #000;
+    transform: scale(1.02)
+}
+::placeholder{
+    font-size: 12px;
+}
+.price input{
+width: 20%
+}
+#total{
+    background: #9b3030;
+   border-radius: 4px;
+    padding: 10px ;
+}
+#total::before{
+    content: "total: ";
+
+}
+button{
+    width: 100%;
+    border: none;
+    height: 30px;
+    cursor: pointer;
+ background: #2571ae;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    outline: none;
+    transition: .5s
+}
+button:hover{
+ background: #0a2132;
+ letter-spacing: 1px;
+
+}
+#search{
+        margin-top: 20px;
+}
+.search-btns{
+display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+ .search-btns #search-title{
+width: 49%
+ }
+ .search-btns #search-category{
+     width: 49%
+ }
+.submit{
+    margin-top: 20px;
+    display: none;
+}
+.submit.active{
+    display: block;
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin: 50px 0;
+}
+table th{
+   text-transform: uppercase;
+    color: #ff2828;
+    font-size: 18px
+}
+
+table th,table td{
+    padding: 5px
+}
+
+table #delete , table #update{
+    font-size: 14px;
+    font-size: 14px;
+    padding: 10px;
+}
+
+
+table #delete:hover ,table #update:hover{
+    letter-spacing: 0px;
+}
+
+
+
+
+
+
+
+
+

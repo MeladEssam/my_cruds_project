@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUDS</title>
+      <link rel="stylesheet" href="cruds.css">
+</head>
+<body>
+   <div class="cruds-container">
+       <div class="head">
+           <h2>cruds</h2>
+           <p>product management system</p>
+
+       </div>
+       <div class="inputs">
+           <input type="text" id="title" placeholder="title">
+           <div class="price">
+                 <input type="number" id="price" placeholder="price">
+                 <input type="number" id="taxes" placeholder="Taxes">
+                 <input type="number" id="ads" placeholder="ads">
+                 <input type="number" id="discount" placeholder="discount">
+                 <small id="total"></small>
+           </div>
+           <input type="number" id="count" placeholder="count">
+            <input type="text" id="category" placeholder="category">
+            <button class="submit create active">Create</button>
+            <button class="submit update-product">Update Product</button>
+            <button class="submit deleteAll">Delete All</button>
+
+       </div>
+       <div class="outputs">
+           <div class="search-container">
+               <input type="text" id="search" placeholder="search">
+               <div class="search-btns">
+                   <button id="search-title">Search By Title</button>
+                   <button id="search-category">Search By Category</button>
+               </div>
+           </div>
+           <table>
+               <tr>
+                   <th>Id</th>
+                   <th>Title</th>
+                   <th>Price</th>
+                   <th>Taxes</th>
+                   <th>Ads</th>
+                   <th>Discount</th>
+                   <th>Total</th>
+                   <th>Category</th>
+                   <th>Update</th>
+                   <th>Delete</th>
+
+               </tr>
+               <tbody id="tbody">
+
+               </tbody>
+           </table>
+       </div>
+
+
+    </div> 
+
+    <!--<script src="cruds.js"></script>-->
+    <script src="cruds_script.js"></script>
+
+</body>
+</html>
